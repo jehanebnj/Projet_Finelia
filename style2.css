@@ -1,0 +1,91 @@
+body
+{
+  width: 80%;
+  margin: 0 auto;
+  outline: 5px auto #78BB01;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+  display: grid;
+  background-color: #ffffff;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header"
+                       "main main main"
+                       "footer footer footer"
+}
+.error
+{
+  color: red;
+}
+
+/* EN TETE*/
+header
+{
+  display: grid;
+  grid-area: header;
+  text-align: center;
+  padding: 30px 0;
+  background-color : #1c3752;;
+  border: 3px #78BB01 solid;
+  grid-gap: 10px;
+    grid-template-columns: 150px 600px 250px;
+    grid-template-areas:
+        "titre titre titre"
+
+}
+
+.header-titre
+{
+  grid-area: titre;
+}
+.header-titre .titre, 
+.header-titre .st 
+{
+  color: white;
+  margin: 7px auto;
+}
+/* MAIN */
+.formulaire-moy
+{
+  margin:20px;
+  padding:20px;
+}
+table 
+{
+  background-color: white;
+  border:2px solid black;
+  border-collapse:collapse;
+  text-align: center;
+  width:120%;
+  margin:auto;
+  padding: 20px;
+}
+th 
+{
+  border:3px solid #78BB01;
+  color: #1c3752;
+  padding:10px;
+  background-color:#ffffff;
+  width:25%;
+}
+td 
+{
+  font-size:100%;
+  border:2px solid #78BB01;
+  padding:auto;
+  text-align:center;
+}
+/* FOOTER */    
+footer
+{
+  grid-area: footer;
+  background-color: #1c3752;
+  border: 3px #78BB01 solid;
+  text-align: center;
+  text-align-last: center;
+  font-style: italic;
+  color: #edebcf;
+}
